@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1493616978 source:/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/OpenGLTutorials/main.cpp
+	<iostream>
+	<string.h>
+	<GL/glew.h>
+	"Display.h"
+
+1493614950 /home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/OpenGLTutorials/include/display.h
+
+1493613501 source:/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/OpenGLTutorials/src/display.cpp
+	"display.h"
+
+1493616651 /home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/OpenGLTutorials/include/Display.h
+	<string.h>
+	<iostream>
+	<SDL2/SDL.h>
+

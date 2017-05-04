@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/OpenGLTutorials/include/Display.h
+string.h
+-
+iostream
+-
+SDL2/SDL.h
+-
+
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/OpenGLTutorials/main.cpp
+iostream
+-
+string.h
+-
+GL/glew.h
+-
+include/Display.h
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/OpenGLTutorials/include/Display.h
+

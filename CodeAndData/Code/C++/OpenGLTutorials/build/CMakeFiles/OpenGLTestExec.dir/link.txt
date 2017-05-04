@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++0x   CMakeFiles/OpenGLTestExec.dir/main.cpp.o  -o OpenGLTestExec -rdynamic -lGLU -lGL -lGLU -lGL -lGLEW 

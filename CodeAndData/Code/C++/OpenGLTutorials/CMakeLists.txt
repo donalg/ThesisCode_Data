@@ -1,0 +1,45 @@
+project(OpenGLTest)
+cmake_minimum_required(VERSION 3.0)
+aux_source_directory(. SRC_LIST)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
+#set(PROJECT_NAME "OpenGLTest")
+set(SOURCE
+   ${SOURCE}
+   ${CMAKE_CURRENT_SOURCE_DIR}/src/Display.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+)
+set(HEADERS
+   ${HEADERS}
+   ${CMAKE_CURRENT_SOURCE_DIR}/include/Display.h
+)
+
+add_executable(${PROJECT_NAME} ${SOURCE})
+
+INCLUDE(FindPackageHandleStandardArgs)
+INCLUDE(FindPkgConfig)
+INCLUDE(FindOpenGL REQUIRED)
+INCLUDE(FindGLEW REQUIRED)
+INCLUDE(FindSDL REQUIRED)
+
+FIND_PACKAGE(OpenGL)
+FIND_PACKAGE(GLUT)
+FIND_PACKAGE(GLEW)
+
+INCLUDE_DIRECTORIES(${OPENGL_INCLUDE_DIR})
+INCLUDE_DIRECTORIES(${GLEW_INCLUDE_DIR})
+
+pkg_search_module(SDL2 REQUIRED sdl2)
+target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES} ${OPENGL_LIBRARIES}  ${GLEW_LIBRARIES} ${SOIL_LIBRARIES})
+
+#create the executable
+SET(EXEC OpenGLTestExec)
+ADD_EXECUTABLE(${EXEC} main.cpp)
+
+TARGET_LINK_LIBRARIES (${EXEC}
+   ${cllib}
+   ${GLUT_LIBRARIES}
+   ${OPENGL_LIBRARIES}
+   ${GLEW_LIBRARY}
+   ${OPENCL_LIBRARIES}
+)

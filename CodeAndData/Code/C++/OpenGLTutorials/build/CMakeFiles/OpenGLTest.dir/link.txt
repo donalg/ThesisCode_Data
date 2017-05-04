@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++0x   CMakeFiles/OpenGLTest.dir/src/Display.cpp.o CMakeFiles/OpenGLTest.dir/main.cpp.o  -o OpenGLTest -rdynamic -lSDL2 -lGLU -lGL -lGLU -lGL -lGLEW 

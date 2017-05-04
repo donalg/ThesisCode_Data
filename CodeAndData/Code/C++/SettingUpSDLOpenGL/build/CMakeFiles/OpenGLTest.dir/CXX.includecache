@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/SettingUpSDLOpenGL/include/display/Display.cpp
+Display.hpp
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/SettingUpSDLOpenGL/include/display/Display.hpp
+GL/glew.h
+-
+SDL2/SDL.h
+-
+iostream
+-
+
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/SettingUpSDLOpenGL/include/display/Display.hpp
+string.h
+-
+iostream
+-
+SDL2/SDL.h
+-
+
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/SettingUpSDLOpenGL/src/main.cpp
+iostream
+-
+string.h
+-
+GL/glew.h
+-
+../include/display/Display.hpp
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/SettingUpSDLOpenGL/include/display/Display.hpp
+
