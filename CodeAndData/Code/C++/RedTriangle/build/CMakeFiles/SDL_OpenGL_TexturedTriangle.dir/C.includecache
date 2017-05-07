@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/TexturedTriangle/includes/stb_image/stb_image.c
+stb_image.h
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/TexturedTriangle/includes/stb_image/stb_image.h
+math.h
+-
+string.h
+-
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+assert.h
+-
+stdarg.h
+-
+
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/TexturedTriangle/includes/stb_image/stb_image.h
+stdio.h
+-
+

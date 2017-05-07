@@ -1,0 +1,3 @@
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/TexturedTriangle/build/CMakeFiles/edit_cache.dir
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/TexturedTriangle/build/CMakeFiles/rebuild_cache.dir
+/home/me/Documents/Uni/Subjects_2017_SP1/ThesisFiles/Thesis/CodeAndData/Code/C++/TexturedTriangle/build/CMakeFiles/SDL_OpenGL_TexturedTriangle.dir

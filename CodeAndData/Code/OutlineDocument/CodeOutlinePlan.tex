@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{verbatim}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{amssymb}
+
+% remove auto indenting 
+\renewcommand{\indent}{\hspace{0cm}}
+\newcommand{\pe}{\vspace{0.5cm}}
+
+\begin{document}
+
+{\huge{\uppercase{\textbf{{Code Outline Plan}}}}}
+
+	\section{Key Objectives} 
+		This document outlines the stepping stones and objectives required to achieve the coding section of this thesis. The end goal of this document is to outline steps needed to convert multiple input images into a 3D model of a scene and provide useful software to for viewing and analysis the results.  
+
+	\subsection{Geometry Viewer}
+		The purpose of the geometry viewer is to provide a means of viewing the output from the scene, this will provide qualitative information about the effectiveness of the algorithms used for the scene recreation and also provide a tool for immediate feed back. 
+
+		\pe 
+
+		The Geometry viewer will make use the OpenGL 3D graphics libraries which has been classed as an industry standard for 3D graphics thus the validity of the techniques used with in the library are of the highest standards and reliable. 
+
+
+	\subsection{File Handling}
+
+		The file handling section of this report will  be solely focused on the reading in of visible images and also infrared images. 
+
+		\subsubsection{Visible Images}
+
+			The libraries used for visible images will include both OpenCV and Stb Image this will provide a versatile means of implementing the images into the coding section of this report.
+
+
+		\subsubsection{Inrared Images}
+
+			As for the infrared images these are a little more complex, the use of a Python3 script will be used to convert from the .xsls (Excel file format) to a pre defined binary file type. 
+
+	\subsection{Camera Calibration}
+		Calibrate physical camera to approximate computational pinhole camera
+
+		\subsubsection{Intrinsic visible camera calibrations}
+
+		\subsubsection{Extrinsic visible camera calibrations}
+
+		\subsubsection{Intrinsic Infrared camera calibrations}
+
+		\subsubsection{Extrinsic Infrared camera calibrations}
+
+	\subsection{Key points, edges and searching algorithms.}
+		Standard algorithms used from OpenCV
+
+	\subsection{Statistical Clustering and point matching algorithms}
+		use OpenCV or develop own using spectral clustering and others
+
+	\subsection{Computing camera location}
+		Use camera definitions to develop relationships between points for different views (homogeneous linear transforms) build statistical depth component for all points based on view angles and determine relative positions from each camera view and thus relate these back to global positions.
+
+	\subsection{Volume definitions} 
+		extend pixels into space forming a coloured volume.
+
+	\subsection{Volume intersection definitions} 
+		performing pixel volume cuts from pixel volumes at other view locations. 
+
+	\subsection{Mesh creation}
+		Create a mesh which has vertices, visibility and colour components
+
+	\subsection{Mesh refinement}
+		Toggle the visibility component of the mesh, recreate the camera views and test if mesh section can be deleted (i.e. it's visibility plays no part in the view of the scene)
+
+\end{document}
